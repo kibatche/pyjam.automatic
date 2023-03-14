@@ -4,7 +4,7 @@ import argparse as ap, requests as rq, os, subprocess
 
 def down_tunnel():
     try:
-        proc_down = subprocess.Popen(['wg-quick', 'down', './tunnel.conf'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        proc_down = subprocess.Popen(['wg-quick', 'down', '/tmp/tunnel.conf'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output, error = proc_down.communicate()
         if output:
             print(output.decode())
@@ -15,7 +15,7 @@ def down_tunnel():
 
 def up_tunnel():
     try:
-        proc_down = subprocess.Popen(['wg-quick', 'up', './tunnel.conf'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        proc_down = subprocess.Popen(['wg-quick', 'up', '/tmp/tunnel.conf'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output, error = proc_down.communicate()
         if output:
             print(output.decode())
@@ -26,14 +26,14 @@ def up_tunnel():
 
 def remove_conf_file():
     try:
-        os.remove('tunnel.conf')
+        os.remove('/tmp/tunnel.conf')
         print("File removed successfully.")
     except Exception as e:
         print(f"Error : {e}")
 
 def download_file(port):
     try:
-        with open('tunnel.conf', 'w') as conf:
+        with open('/tmp/tunnel.conf', 'w') as conf:
             try:
                 url = "https://tunnel.pyjam.as/" + str(port)
                 resp = rq.get(url)
