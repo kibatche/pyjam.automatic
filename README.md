@@ -3,6 +3,11 @@ A small python program to automate the creation of a pyjam.as tunnel.
 
 ## pyjam.as :
 https://tunnel.pyjam.as/
+https://gitlab.com/pyjam.as/tunnel
+
+
+## needed program:
+You need wireguard in order to use this program.
 
 ## usage :
 
