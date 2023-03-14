@@ -38,8 +38,8 @@ def download_file(port):
                 url = "https://tunnel.pyjam.as/" + str(port)
                 resp = rq.get(url)
                 conf.writelines(str(resp.content.decode()))
-                os.chown('tunnel.conf', 0, 0)
-                os.chmod('tunnel.conf', 0o000)
+                os.chown('/tmp/tunnel.conf', 0, 0)
+                os.chmod('/tmp/tunnel.conf', 0o000)
             except Exception as e:
                 print(f"Error : {e}")
                 exit(1)
