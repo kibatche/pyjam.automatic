@@ -1,7 +1,11 @@
 # pyjam.automatic
 A small python program to automate the creation of a pyjam.as tunnel.
 
-## pyjam.as :
+pyjam.as is a super cool reverse proxy for a local service. To me, it's useful as a replacement for ngrok and its business practices which severely limit the usefulness of such a program in CTF, Hack The Box, or root-me challenges.
+
+A huge thanks to the dev(s) of tunnel.pyjam.as !
+
+## pyjam.as links :
 https://tunnel.pyjam.as/
 https://gitlab.com/pyjam.as/tunnel
 
