@@ -1,10 +1,10 @@
 # pyjam.automatic
-A small python programm to automate the creation of a pyjam.as tunnel.
+A small python program to automate the creation of a pyjam.as tunnel.
 
 ## pyjam.as :
 https://tunnel.pyjam.as/
 
-## usage : 
+## usage :
 
 ```
 usage: pyjam.py [-h] (-p PORT | -d | -u)
