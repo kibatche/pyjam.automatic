@@ -1,4 +1,4 @@
-> :warning: tunnel.pyjam.as no longer works. You still can up your own tunnel.pyjam.as instance : [check here](https://gitlab.com/pyjam.as/tunnel)
+> :warning: tunnel.pyjam.as no longer works. You still can up your own tunnel instance : [check here](https://gitlab.com/pyjam.as/tunnel). This repo will be archived.
 
 # pyjam.automatic
 A small python program to automate the creation of a pyjam.as tunnel.
